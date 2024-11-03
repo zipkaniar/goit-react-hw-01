@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.profile {
+  border-radius: 5px;
+  border-width: 1.5px;
+  border-color: black;
+  border-style: solid;
+  background-color: rgb(250, 250, 250);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0 0 0;
+  text-align: center;
+  max-width: 500px;
+}
+.avatar {
+  width: 50%;
+  border-radius: 50%;
+  background-color: rgb(42, 42, 42);
+}
+
+.username {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+  margin: 0;
+}
+
+.tag,
+.location {
+  color: rgb(144, 144, 144);
+  margin: 0 0 6px 0;
+  letter-spacing: 1px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(211, 211, 211);
+}
+
+.status {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: stretch;
+  border-color: rgb(136, 136, 136);
+  border-style: solid;
+}
+.status:first-child {
+  border-width: 1.5px 0 0 0;
+}
+.status:nth-child(2) {
+  border-width: 1.5px 1.5px 0 1.5px;
+}
+.status:last-child {
+  border-width: 1.5px 0 0 0;
+}
+
+.followers,
+.views,
+.likes {
+  padding: 10px 0 0 0;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.follower,
+.view,
+.like {
+  padding: 5px 0 5px 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}

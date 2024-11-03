@@ -1,0 +1,17 @@
+#profile-section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#friends-section {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#history-section {
+  display: flex;
+  justify-content: center;
+  padding: 0 60px;
+}
