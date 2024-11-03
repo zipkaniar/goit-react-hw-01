@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styles from './Profiledesing.css';
+import styles from './Profiledesing.module.css';
 
 const Profile =({username,tag,location,avatar,stats}) => {
   return (

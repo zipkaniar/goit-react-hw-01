@@ -1,9 +1,12 @@
 import "./App.css";
-import userData from "./components/data/userData.json";
+import userData from './data/userData.json';
+import friendsData from './data/friendData.json';
 
 import Profile from "./components/ProfileFolder/Profile.jsx";
+import FriendList from "./components/FriendListFolder/FriendList.jsx";
 
-const App = () => {
+const App = ({ initialUserIndex = 0 }) => {
+  const user = userData[initialUserIndex];
   return (
     <>
       {/* Profile Section */}
@@ -15,6 +18,11 @@ const App = () => {
           avatar={user.avatar}
           stats={user.stats}
         />
+      </div>
+
+      {/* Friends Section */}
+      <div id="friends-section">
+        <FriendList friends={friendsData} />
       </div>
     </>
   );
