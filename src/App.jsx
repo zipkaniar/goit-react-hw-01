@@ -1,14 +1,14 @@
 import "./App.css";
-import UserData from "./data/UserData.json";
-import FriendsData from "./data/FriendData.json";
-import Transaction from "./data/Transaction.json";
+import userData from "./data/userData.json";
+import friendsData from "./data/friendData.json";
+import transaction from "./data/transaction.json";
 
 import Profile from "./components/ProfileFolder/Profile.jsx";
 import FriendList from "./components/FriendListFolder/FriendList.jsx";
 import TransactionHistory from "./components/TransactionHistoryFolder/TransactionHistory.jsx";
 
 const App = ({ initialUserIndex = 0 }) => {
-  const user = UserData[initialUserIndex];
+  const user = userData[initialUserIndex];
   return (
     <>
       {/* Profile Section */}
@@ -24,12 +24,12 @@ const App = ({ initialUserIndex = 0 }) => {
 
       {/* Friends Section */}
       <div id="friends-section">
-        <FriendList friends={FriendsData} />
+        <FriendList friends={friendsData} />
       </div>
 
       {/* Transactions Section */}
       <div id="history-section">
-        <TransactionHistory items={Transaction} />
+        <TransactionHistory items={transaction} />
       </div>
     </>
   );
